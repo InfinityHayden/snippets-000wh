@@ -1,0 +1,8 @@
+# BEGIN Force HTTP 000webhost
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^(.*)$ http://site.000webhostapp.com/$1 [R=301,L]
+# END Force HTTP
+
+
+**** replace site.000webhostapp.com with ACTUAL URL.
