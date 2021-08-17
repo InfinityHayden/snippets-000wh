@@ -1,0 +1,5 @@
+#### Force HTTPS 000webhost
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#### End Force HTTPS 000webhost
